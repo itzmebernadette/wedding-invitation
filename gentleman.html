@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark & Carla</title>
+
+    <link rel="stylesheet" href="prenupphoto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- First Section -->
+    <section class="hero">
+        <img src="prenup.png" alt="Prenup Photo" class="prenup">
+    </section>
+
+    <section class="transition">
+
+    <div class="transition-content">
+
+        <h2>Our Story</h2>
+
+        <div class="line"></div>
+
+        <p>
+            Every love story is beautiful,<br>
+            but ours is our favorite.
+        </p>
+
+    </div>
+
+   </section> 
+
+<section class="love-video">
+
+    <div class="video-container">
+
+        <!-- Video -->
+        <video
+    id="ourVideo"
+    preload="metadata"
+    controls
+    playsinline
+    webkit-playsinline>
+            <source src="prenupvid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Thumbnail -->
+        <div class="video-overlay" id="videoOverlay">
+
+            <img src="date.png"alt="Love Story Cover">
+
+            <button id="playButton">
+                ▶
+            </button>
+
+        </div>
+
+    </div>
+
+    <p class="ending-quote" id="endingQuote">
+        "Our wedding was just one day, but the memories will last a lifetime."
+    </p>
+
+</section>
+    <!-- Second Section -->
+    <section class="story">
+
+        <div class="story-content">
+
+            <div class="left">
+    <h1 class="story-title">
+        Written in Grace,<br>
+        Sealed in Faith.
+    </h1>
+
+    <p>
+        What started as a curious glance at church turned into a beautiful life together! MD first noticed my strong, confident energy and couldn't help but be intrigued (mostly wondering who this "siga" girl at church was).
+        Our path wasn't a straight line—complete with mixed signals, unexpected holiday drama, and a little light teasing from Pastor along the way. But through late-night family talks and truly getting to know each other, our relationship bloomed into something deeply meaningful.
+    </p>
+</div>
+            <div class="middle">
+                <img src="1stimg.png" alt="">
+            </div>
+
+            <div class="right">
+                <img src="2ndimg.png" alt="">
+
+                <h3>#MDnaMaglisaSiCarla</h3>
+
+                <p>
+                    From curious glances at church to our forever after.
+                </p>
+            </div>
+
+        </div>
+    </section>
+  
+<section class="invitation-details">
+
+    <div class="invite-container">
+
+        <div class="invite-title">
+
+            <h2>
+                You're invited to<br>
+                our most special<br>
+                day.
+            </h2>
+
+            <img src="flowers.png" alt="Flowers" class="flowers">
+
+        </div>
+
+        <div class="invite-info">
+         <p class="invite-date">
+           <strong>Date:</strong>
+             September 19, 2026
+    <a
+        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mark+%26+Carla+Wedding&dates=20260919T073000Z/20260919T103000Z&location=Mahogany+Place+III,+Taguig+City"
+        target="_blank"
+        class="calendar-icon"
+        title="Add to Calendar">
+        <i class="fa-regular fa-calendar-plus"></i>
+    </a>
+</p>               
+            <p><strong>Time:</strong> 3:30 PM</p>
+
+            <p class="invite-location">
+           <strong>Place:</strong>
+              Mahogany Place III
+              <a
+                href="https://maps.google.com/?q=Mahogany+Place+III+Acacia+Estates+Taguig+City"
+                target="_blank"
+                class="maps-btn">
+            <i class="fa-solid fa-location-dot"></i>
+               View Map
+            </a>
+    </p>
+
+            <p><strong>Address:</strong> Mahogany Place III,<br>
+            Acacia Estate, Taguig City</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="dress-code">
+
+    <div class="dress-container">
+
+        <img src="flower.png" alt="Flower Decoration" class="dress-flower">
+
+        <h2>Dress Code</h2>
+
+        <div class="dress-content">
+
+            <!-- Ladies -->
+            <div class="dress-box">
+
+                <h3>Ladies</h3>
+
+                <img src="ladies.jfif" alt="Ladies Dress Code">
+
+                <ul>
+                    <li>Filipiniana</li>
+                    <li>Midi Wrap Dress</li>
+                    <li>Cocktail Dress</li>
+                </ul>
+
+            </div>
+
+            <div class="dress-box">
+
+                <h3>Gentlemen</h3>
+
+                <img src="gentleman.jfif" alt="Gentlemen Dress Code">
+
+                <ul>
+                    <li>Barong</li>
+                    <li>Long Sleeves</li>
+                    <li>Polo</li>
+                    <li>Coat</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="theme-colors">
+
+            <h3>Theme Color</h3>
+
+            <img src="colorpalette.png" alt="Wedding Color Palette">
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+
+const video = document.getElementById("ourVideo");
+const overlay = document.getElementById("videoOverlay");
+const quote = document.getElementById("endingQuote");
+
+overlay.addEventListener("click", function(){
+
+    overlay.style.display = "none";
+
+    video.setAttribute("controls","");
+
+    video.play();
+
+});
+
+video.addEventListener("ended", function(){
+
+    quote.style.display = "block";
+
+});
+
+</script>
+</body>
+</html>
