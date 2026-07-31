@@ -43,7 +43,11 @@
     preload="metadata"
     controls
     playsinline
-    webkit-playsinline>
+    webkit-playsinline
+    x5-video-player-type="h5"
+    x5-video-player-fullscreen="true"
+    x5-video-orientation="landscape">
+    
             <source src="prenupvid.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -597,19 +601,29 @@ const video = document.getElementById("ourVideo");
 const overlay = document.getElementById("videoOverlay");
 const quote = document.getElementById("endingQuote");
 
-overlay.addEventListener("click", function(){
+overlay.addEventListener("click", async function () {
 
     overlay.style.display = "none";
 
-    video.setAttribute("controls","");
+    video.setAttribute("controls", "");
 
     video.play();
 
-});
+    // Request fullscreen
+    if (video.requestFullscreen) {
+        await video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+    }
 
-video.addEventListener("ended", function(){
-
-    quote.style.display = "block";
+    // Lock landscape (Android browsers)
+    if (screen.orientation && screen.orientation.lock) {
+        try {
+            await screen.orientation.lock("landscape");
+        } catch (err) {
+            console.log("Landscape lock not supported.");
+        }
+    }
 
 });
 

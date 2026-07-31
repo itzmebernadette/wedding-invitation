@@ -1,3 +1,7 @@
+/* ===============================
+   RESET
+================================= */
+
 *{
     margin:0;
     padding:0;
@@ -9,423 +13,218 @@ html{
 }
 
 body{
-    background-image:url("themebackground.png");
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
-
-    font-family:'Cormorant Garamond',serif;
+    font-family:'Cormorant Garamond', serif;
+    background:url("themebackground.png") center center/cover fixed no-repeat;
     overflow-x:hidden;
     color:#735957;
 }
 
-@media(max-width:1024px){
-
-body{
-    background-attachment:scroll;
-     background-image:url("themebackground.png");
-    background-position:center center;
-    background-size:cover;
-}
-
-}
+/* ===============================
+   HERO SECTION
+================================= */
 
 .hero{
+    width:100%;
+    overflow:hidden;
     line-height:0;
 }
 
 .prenup{
     width:100%;
     display:block;
+    height:auto;
 }
 
+/* ===============================
+   OUR STORY TRANSITION
+================================= */
+
 .transition{
-
     background:transparent;
-
     text-align:center;
+    padding:80px 20px;
+}
 
-    padding:70px 20px 60px;
-
-    position:relative;
-
-    z-index:2;
-
+.transition-content{
+    max-width:700px;
+    margin:auto;
 }
 
 .transition h2{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:70px;
-
-    color:#9B6C68;
-
+    font-family:'Great Vibes', cursive;
+    font-size:72px;
     font-weight:400;
-
+    color:#9B6C68;
 }
 
 .line{
-
     width:90px;
-
     height:2px;
-
     background:#D6B7A8;
-
-    margin:20px auto;
-
+    margin:20px auto 25px;
 }
 
 .transition p{
-
     font-size:24px;
-
+    line-height:1.7;
     color:#735957;
-
-    line-height:1.6;
-
-}
-
-
-.story{
-
-    position:relative;
-
-    margin-top:-20px;
-
-    padding:90px 0;
-
-    overflow:hidden;
-
-    background:transparent;
-
-}
-.story-bg{
-
-    position:absolute;
-
-    inset:0;
-
-    width:100%;
-
-    height:100%;
-
-    object-fit:cover;
-
-    z-index:-1;
-
-}
-
-.story-content{
-
-    width:88%;
-
-    max-width:1450px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:.95fr 1.15fr .8fr;
-
-    gap:70px;
-
-    align-items:center;
-
-}
-
-/* LEFT */
-
-.left{
-
-    margin-top:60px;
-
-}
-
-.story-title{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:78px;
-
-    color:#9B6C68;
-
-    font-weight:400;
-
-    line-height:1.05;
-
-    margin-bottom:25px;
-
-}
-
-.left p{
-
-    font-size:21px;
-
-    color:#735957;
-
-    line-height:1.8;
-
-    text-align:justify;
-
-}
-
-/* CENTER IMAGE */
-
-.middle{
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-.middle img{
-
-    width:100%;
-
-    max-width:470px;
-
-    display:block;
-
-    border-radius:8px;
-
-    box-shadow:0 18px 40px rgba(0,0,0,.12);
-
-    transition:.3s ease;
-
-}
-
-.middle img:hover{
-
-    transform:translateY(-5px);
-
-}
-
-/* RIGHT */
-
-.right{
-
-    margin-top:120px;
-
-    text-align:center;
-
-}
-
-.right img{
-
-    width:100%;
-
-    max-width:280px;
-
-    display:block;
-
-    margin:auto;
-
-    border-radius:8px;
-
-    box-shadow:0 18px 40px rgba(0,0,0,.12);
-
-    transition:.3s ease;
-
-}
-
-.right img:hover{
-
-    transform:translateY(-5px);
-
-}
-
-.right h3{
-
-    margin-top:20px;
-
-    font-size:28px;
-
-    color:#9B6C68;
-
-    font-weight:500;
-
-}
-
-.right p{
-
-    margin-top:10px;
-
-    font-size:19px;
-
-    color:#735957;
-
-    line-height:1.6;
-
 }
 
 /* ===============================
    TABLET
 ================================= */
 
-@media(max-width:1024px){
+@media (max-width:1024px){
 
-.story-content{
-
-    grid-template-columns:1fr;
-    gap:40px;
-    width:92%;
-    text-align:center;
-
+body{
+    background-attachment:scroll;
 }
 
-.left{
-
-    margin-top:0;
-
+.transition{
+    padding:70px 25px;
 }
 
-.left p{
-
-    text-align:center;
-
+.transition h2{
+    font-size:60px;
 }
 
-.middle img{
-
-    max-width:380px;
-
-}
-
-.right{
-
-    margin-top:30px;
-
+.transition p{
+    font-size:22px;
 }
 
 }
 
-.video-container{
-    width:95%;
-    max-width:900px;
-}
-
-.video-container video{
-    height:auto;
-    aspect-ratio:16/9;
-    object-fit:cover;
-}
-
-.video-overlay img{
-    object-fit:contain;
-    background:#FAF5EF;
-}
-
-#playButton{
-    width:80px;
-    height:80px;
-    font-size:34px;
-}
 /* ===============================
    MOBILE
 ================================= */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 .transition{
-
-    padding:50px 20px;
-
+    padding:55px 20px;
 }
 
 .transition h2{
+    font-size:48px;
+}
 
-    font-size:52px;
-
+.line{
+    width:70px;
+    margin:18px auto;
 }
 
 .transition p{
-
-    font-size:20px;
+    font-size:18px;
+    line-height:1.6;
+}
 
 }
 
+/* ===============================
+   OUR STORY
+================================= */
 
 .story{
-
-    margin-top:0;
-
+    padding:100px 20px;
     background:transparent;
-
-    padding:60px 20px;
-
 }
+
+.story-content{
+    max-width:1400px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:0.95fr 1.1fr 0.8fr;
+    gap:70px;
+    align-items:center;
+}
+
+/* ===============================
+   LEFT CONTENT
+================================= */
+
+.left{
+    margin-top:50px;
+}
+
 .story-title{
-
+    font-family:'Great Vibes',cursive;
     font-size:56px;
-
+    font-weight:400;
     color:#9B6C68;
-
+    line-height:1.1;
+    margin-bottom:25px;
 }
 
 .left p{
-
     font-size:18px;
+    line-height:1.9;
+    color:#735957;
+    text-align:justify;
+}
 
+/* ===============================
+   CENTER IMAGE
+================================= */
+
+.middle{
+    display:flex;
+    justify-content:center;
 }
 
 .middle img{
+    width:100%;
+    max-width:480px;
+    display:block;
 
-    max-width:320px;
+    border-radius:10px;
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
 
+    transition:.35s ease;
 }
 
-.right img{
-
-    max-width:220px;
-
+.middle img:hover{
+    transform:translateY(-6px);
 }
 
-.right h3{
-
-    font-size:22px;
-
-    color:#9B6C68;
-
-}
-
-.right p{
-
-    color:#735957;
-
-    font-size:17px;
-
-}
-
-}/* ==========================================
-   LOVE VIDEO (DESKTOP)
-========================================== */
+/* ===============================
+   LOVE VIDEO
+================================= */
 
 .love-video{
+    padding:100px 20px;
     background:transparent;
-    padding:20px 20px 90px;
     text-align:center;
 }
 
 .video-container{
-    width:100%;
-    max-width:1400px;
-    margin:auto;
     position:relative;
-    border-radius:20px;
+    max-width:1400px;
+    width:100%;
+    margin:auto;
     overflow:hidden;
+    border-radius:20px;
 }
+
+/* Video */
 
 .video-container video{
     width:100%;
-    height:700px;
+    height:auto;
     display:block;
     border-radius:20px;
-    object-fit:cover;
+    object-fit:contain;
 }
+video:fullscreen{
+    object-fit:contain;
+    background:#000;
+}
+
+video:-webkit-full-screen{
+    object-fit:contain;
+    background:#000;
+}
+/* Thumbnail Overlay */
 
 .video-overlay{
     position:absolute;
@@ -438,139 +237,230 @@ body{
     width:100%;
     height:100%;
     object-fit:cover;
-    transition:.6s;
+    transition:.5s ease;
 }
 
 .video-overlay:hover img{
     transform:scale(1.05);
 }
 
+/* Play Button */
+
 #playButton{
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+
     width:90px;
     height:90px;
+
     border:none;
     border-radius:50%;
-    background:rgba(214,183,168,.92);
+
+    background:rgba(155,108,104,.92);
     color:#fff;
-    font-size:38px;
+
+    font-size:36px;
     cursor:pointer;
-    transition:.3s;
+
+    transition:.3s ease;
 }
 
 #playButton:hover{
-    background:#9B6C68;
+    background:#735957;
     transform:translate(-50%,-50%) scale(1.08);
 }
+
+/* Ending Quote */
 
 .ending-quote{
     display:none;
     margin-top:35px;
+
     font-family:'Great Vibes',cursive;
-    font-size:40px;
+    font-size:42px;
     color:#9B6C68;
+
+    line-height:1.5;
 }
 
-/* ==========================================
+/* ===============================
    TABLET
-========================================== */
+================================= */
 
 @media (max-width:1024px){
 
-    .love-video{
-        padding:40px 20px 70px;
-    }
+.love-video{
+    padding:80px 25px;
+}
 
-    .video-container{
-        width:95%;
-        max-width:800px;
-        margin:auto;
-        border-radius:18px;
-    }
+.video-container{
+    max-width:900px;
+    border-radius:18px;
+}
 
-    .video-container video{
-        width:100%;
-        height:auto;
-        aspect-ratio:16/9;
-        object-fit:cover;
-        border-radius:18px;
-    }
+.video-container video{
+    border-radius:18px;
+}
 
-    .video-overlay{
-        border-radius:18px;
-    }
+.video-overlay img{
+    border-radius:18px;
+}
 
-    .video-overlay img{
-        width:100%;
-        height:100%;
-        object-fit:cover;
-        border-radius:18px;
-    }
+#playButton{
+    width:75px;
+    height:75px;
+    font-size:30px;
+}
 
-    #playButton{
-        width:70px;
-        height:70px;
-        font-size:30px;
-    }
-
-    .ending-quote{
-        font-size:32px;
-        padding:0 25px;
-        margin-top:25px;
-    }
+.ending-quote{
+    font-size:34px;
+    padding:0 20px;
+}
 
 }
 
-/* ==========================================
+/* ===============================
    MOBILE
-========================================== */
+================================= */
 
 @media (max-width:768px){
 
-    .love-video{
-        padding:30px 15px 60px;
-    }
+.love-video{
+    padding:60px 15px;
+}
 
-    .video-container{
-        width:100%;
-        border-radius:15px;
-    }
+.video-container{
+    border-radius:15px;
+}
 
-    .video-container video{
-        width:100%;
-        height:auto;
-        aspect-ratio:16/9;
-        object-fit:cover;
-        border-radius:15px;
-    }
+.video-container video{
+    border-radius:15px;
+}
 
-    .video-overlay{
-        border-radius:15px;
-    }
+.video-overlay img{
+    border-radius:15px;
+}
 
-    .video-overlay img{
-        width:100%;
-        height:100%;
-        object-fit:cover;
-        border-radius:15px;
-    }
+#playButton{
+    width:60px;
+    height:60px;
+    font-size:24px;
+}
 
-    #playButton{
-        width:60px;
-        height:60px;
-        font-size:26px;
-    }
+.ending-quote{
+    font-size:26px;
+    padding:0 15px;
+    line-height:1.6;
+}
 
-    .ending-quote{
-        font-size:24px;
-        line-height:1.5;
-        padding:0 20px;
-        margin-top:20px;
-    }
+}
 
+
+/* ===============================
+   OUR STORY
+================================= */
+
+/* ===============================
+   OUR STORY
+================================= */
+
+.story{
+    padding:80px 20px;
+    background:transparent;
+}
+
+.story-content{
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:0.95fr 1.1fr 0.8fr;
+    gap:45px;
+    align-items:center;
+}
+
+/* Left */
+
+.left{
+    margin-top:20px;
+}
+
+.story-title{
+    font-family:'Great Vibes',cursive;
+    font-size:46px;
+    font-weight:400;
+    color:#9B6C68;
+    line-height:1.08;
+    margin-bottom:20px;
+}
+
+.left p{
+    font-size:15px;
+    color:#735957;
+    line-height:1.7;
+    text-align:justify;
+}
+
+/* Middle */
+
+.middle{
+    display:flex;
+    justify-content:center;
+}
+
+.middle img{
+    width:100%;
+    max-width:280px;
+    display:block;
+
+    border-radius:10px;
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+    transition:.35s ease;
+}
+
+.middle img:hover{
+    transform:translateY(-6px);
+}
+
+/* Right */
+
+.right{
+    margin-top:60px;
+    text-align:center;
+}
+
+.right img{
+    width:100%;
+    max-width:220px;
+
+    display:block;
+    margin:auto;
+
+    border-radius:10px;
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+    transition:.35s ease;
+}
+
+.right img:hover{
+    transform:translateY(-6px);
+}
+
+.right h3{
+    margin-top:15px;
+    font-size:18px;
+    color:#9B6C68;
+    font-weight:600;
+}
+
+.right p{
+    margin-top:7px;
+    font-size:15px;
+    line-height:1.6;
+    color:#735957;
 }
 
 /* ===============================
@@ -578,43 +468,47 @@ body{
 ================================= */
 
 .invitation-details{
-    padding:120px 20px;
+    padding:80px 20px;
     background:transparent;
 }
 
 .invite-container{
-    max-width:1100px;
+    max-width:950px;
     margin:auto;
     text-align:center;
 }
 
+/* Title */
+
 .invite-title{
     position:relative;
     display:inline-block;
-    margin-bottom:50px;
+    margin-bottom:45px;
 }
 
 .invite-title h2{
     font-family:'Cormorant Garamond',serif;
-    font-size:100px;
+    font-size:52px;
     font-weight:400;
-    line-height:.9;
     color:#8B5E5A;
+    line-height:.95;
 }
 
 .flowers{
     position:absolute;
-    width:260px;
-    right:-240px;
+    width:150px;
+    right:-165px;
     top:50%;
     transform:translateY(-50%);
 }
 
+/* Info */
+
 .invite-info{
     display:flex;
     flex-direction:column;
+    gap:32px;
     align-items:center;
-    gap:40px;   /* controls spacing between Date & Time and Location */
 }
 
 .invite-block{
@@ -622,48 +516,46 @@ body{
 }
 
 .invite-block h3{
-    font-family:'Cormorant Garamond', serif;
-    font-size:34px;
-    font-weight:500;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:1.5px;
     color:#8B5E5A;
-    letter-spacing:2px;
     text-transform:uppercase;
-    margin-bottom:12px;
+    margin-bottom:8px;
 }
 
 .invite-main{
-    font-size:42px;
+    font-size:24px;
     color:#5E4946;
     font-weight:600;
-    line-height:1.2;
-    margin-bottom:4px;
 }
 
 .invite-sub{
-    font-size:28px;
+    font-size:16px;
     color:#735957;
-    margin-bottom:18px;
+    margin:7px 0 16px;
 }
+
+/* Buttons */
 
 .invite-btn{
     display:inline-flex;
     align-items:center;
-    justify-content:center;
-    gap:10px;
+    gap:8px;
 
-    min-width:230px;
-    padding:14px 34px;
+    padding:11px 25px;
 
     background:linear-gradient(135deg,#8B5E5A,#A87773);
+
     color:#fff;
     text-decoration:none;
 
     border-radius:40px;
 
-    font-size:20px;
+    font-size:14px;
     font-weight:600;
 
-    box-shadow:0 8px 20px rgba(139,94,90,.25);
+    box-shadow:0 6px 15px rgba(139,94,90,.25);
 
     transition:.3s ease;
 }
@@ -673,194 +565,319 @@ body{
     background:linear-gradient(135deg,#735957,#8B5E5A);
 }
 
-/* ==========================`=`====
+/* ===============================
    TABLET
 ================================= */
 
-@media (max-width:1024px){
+@media(max-width:1024px){
 
-    .invitation-details{
-        padding:90px 20px;
-    }
-
-    .invite-title h2{
-        font-size:72px;
-    }
-
-    .flowers{
-        width:190px;
-        right:-160px;
-    }
-
-    .invite-info{
-        font-size:24px;
-    }
-
-    .invite-date strong,
-    .invite-address strong{
-        font-size:28px;
-    }
-
-    .invite-btn{
-        min-width:220px;
-        font-size:18px;
-        padding:14px 28px;
-    }
-
+.story-content{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:45px;
 }
 
-/* ==========================`=`====
-   MOBILE
-================================= */
+.left,
+.right{
+    margin-top:0;
+}
 
-@media (max-width:768px){
+.left p{
+    text-align:center;
+}
 
-    .invite-info{
-        gap:35px;
-    }
+.story-title{
+    font-size:50px;
+}
 
-    .invite-block h3{
-        font-size:24px;
-    }
+.middle img{
+    max-width:420px;
+}
 
-    .invite-main{
-        font-size:30px;
-    }
+.right img{
+    max-width:250px;
+}
 
-    .invite-sub{
-        font-size:20px;
-        margin-bottom:15px;
-    }
+/* Invitation */
 
-    .invite-btn{
-        width:220px;
-        font-size:18px;
-        padding:13px 20px;
-    }
+.invitation-details{
+    padding:90px 20px;
+}
+
+.invite-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.invite-title h2{
+    font-size:58px;
+}
+
+.flowers{
+    position:static;
+    width:120px;
+    transform:none;
+}
+
+.invite-main{
+    font-size:28px;
+}
+
+.invite-sub{
+    font-size:20px;
+}
 
 }
 
 /* ===============================
-   DRESS CODE
+   MOBILE
 ================================= */
 
+@media(max-width:768px){
+
+    /* =========================
+       STORY
+    ========================= */
+
+    .story{
+        padding:50px 15px;
+    }
+
+    .story-title{
+        font-size:30px;
+    }
+
+    .left p{
+        font-size:13px;
+        line-height:1.5;
+        text-align:center;
+    }
+
+    .middle img{
+        max-width:260px;
+    }
+
+    .right img{
+        max-width:180px;
+    }
+
+    .right h3{
+        font-size:16px;
+    }
+
+    .right p{
+        font-size:13px;
+        line-height:1.5;
+    }
+
+
+    /* =========================
+       INVITATION
+    ========================= */
+
+    .invitation-details{
+        padding:50px 15px;
+    }
+
+    .invite-title{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:6px;
+    }
+
+    .invite-title h2{
+        font-size:30px;
+        line-height:1;
+        text-align:center;
+        margin-left:10px;
+    }
+
+    .flowers{
+        width:55px;
+        margin-left:-5px;
+    }
+
+    .invite-block h3{
+        font-size:17px;
+    }
+
+    .invite-main{
+        font-size:20px;
+    }
+
+    .invite-sub{
+        font-size:14px;
+        line-height:1.5;
+    }
+
+    .invite-btn{
+        width:160px;
+        justify-content:center;
+        padding:10px 15px;
+        font-size:13px;
+    }
+
+}
+
+/* ==========================================
+   DRESS CODE
+========================================== */
+
 .dress-code{
-    padding:120px 20px;
+    padding:80px 20px;
     background:transparent;
 }
 
 .dress-container{
-    max-width:1700px;
+    max-width:1150px;
     margin:auto;
     text-align:center;
 }
 
-/* Title */
+/* ===============================
+   TITLE
+================================= */
 
 .dress-title{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:15px;
-    margin-bottom:70px;
+    gap:18px;
+    margin-bottom:50px;
 }
 
 .dress-flower{
-    width:200px;
+    width:110px;
     height:auto;
 }
 
-.dress-title h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size:80px;
-    font-weight:400;
-    color:#5e4946;
-    text-transform:uppercase;
-    letter-spacing:3px;
-    margin:0;
-}
 .dress-heading{
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 
-.dress-layout{
-    width:500px;      /* Adjust size */
-    height:auto;
-    margin-top:10px;
-    display:block;
+.dress-title h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:48px;
+    font-weight:400;
+    color:#5E4946;
+    text-transform:uppercase;
+    letter-spacing:2px;
 }
-/* Content */
+
+.dress-layout{
+    width:220px;
+    margin-top:7px;
+}
+
+/* ===============================
+   CONTENT
+================================= */
 
 .dress-content{
     display:grid;
-    grid-template-columns:220px 450px 220px 450px;
-    justify-content:center;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
     align-items:center;
-    gap:50px;
+    margin-top:30px;
 }
 
-/* Text */
+/* ===============================
+   TEXT
+================================= */
 
 .dress-text{
     text-align:left;
 }
 
 .dress-text h3{
-    font-size:38px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:24px;
     color:#8B5E5A;
-    margin-bottom:18px;
+    margin-bottom:12px;
 }
 
 .dress-text ul{
-    padding-left:24px;
+    padding-left:18px;
 }
 
 .dress-text li{
-    font-size:22px;
+    font-size:15px;
     color:#735957;
-    line-height:1.8;
+    line-height:1.6;
 }
 
-/* Images */
+/* Move Ladies text closer to dress image */
+
+.dress-content .dress-text:first-child{
+    padding-left:25px;
+}
+
+/* Move Gentlemen text closer to dress image */
+
+.dress-content .dress-text:nth-child(3){
+    padding-right:25px;
+}
+
+/* ===============================
+   IMAGES
+================================= */
+
+/* Move Ladies image closer to text */
+
+.dress-content .dress-img:nth-child(2){
+    transform:translateX(-15px);
+}
+
+/* Move Gentlemen image closer to text */
+
+.dress-content .dress-img:nth-child(4){
+    transform:translateX(-30px);
+}
 
 .dress-img{
     width:100%;
-    max-width:500px;
-    height:auto;
-    display:block;
+    max-width:260px;
     margin:auto;
+    display:block;
 }
 
-/* Theme Colors */
+/* ===============================
+   THEME COLORS
+================================= */
 
 .theme-colors{
-    margin-top:80px;
+    margin-top:60px;
 }
 
 .theme-colors h3{
-    font-size:46px;
-    color:#5e4946;
-    margin-bottom:30px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:30px;
     font-weight:500;
+    color:#5E4946;
+    margin-bottom:20px;
     text-transform:uppercase;
+    letter-spacing:1.5px;
 }
 
 .theme-colors img{
     width:100%;
-    max-width:900px;
+    max-width:650px;
+    display:block;
+    margin:auto;
 }
-
-
-/* ===============================
+/* ==========================================
    TABLET
-================================= */
+========================================== */
 
 @media (max-width:1024px){
 
     .dress-code{
-        padding:90px 20px;
+        padding:80px 25px;
     }
 
     .dress-title{
@@ -870,23 +887,21 @@ body{
     }
 
     .dress-flower{
-        width:100px;
+        width:120px;
     }
 
     .dress-title h2{
-        font-size:58px;
-        letter-spacing:2px;
+        font-size:56px;
     }
 
     .dress-layout{
-        width:220px;
-        margin-top:10px;
+        width:240px;
     }
 
     .dress-content{
         grid-template-columns:1fr;
-        gap:50px;
-        max-width:650px;
+        gap:45px;
+        max-width:600px;
         margin:auto;
     }
 
@@ -894,208 +909,570 @@ body{
         text-align:center;
     }
 
+    .dress-text ul{
+        list-style-position:inside;
+        padding:0;
+    }
+
     .dress-text h3{
-        font-size:34px;
+        font-size:30px;
+    }
+
+    .dress-text li{
+        font-size:20px;
+    }
+
+.dress-content .dress-text:first-child,
+.dress-content .dress-text:nth-child(3){
+    padding-left:0;
+    padding-right:0;
+}
+    .dress-img{
+        max-width:280px;
+    }
+
+    .theme-colors{
+        margin-top:70px;
+    }
+
+    .theme-colors h3{
+        font-size:36px;
+    }
+
+    .theme-colors img{
+        max-width:650px;
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .dress-code{
+        padding:50px 15px;
+    }
+
+    .dress-title{
+        flex-direction:column;
+        gap:7px;
+        margin-bottom:30px;
+    }
+
+    .dress-flower{
+        width:60px;
+    }
+
+    .dress-title h2{
+        font-size:30px;
+        letter-spacing:.5px;
+    }
+
+    .dress-layout{
+        width:170px;
+    }
+
+    .dress-content{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .dress-text{
+        text-align:center;
+    }
+
+    .dress-text h3{
+        font-size:18px;
+        margin-bottom:8px;
     }
 
     .dress-text ul{
         list-style-position:inside;
         padding:0;
-        text-align:center;
     }
 
     .dress-text li{
-        font-size:22px;
-        line-height:1.8;
+        font-size:13px;
+        line-height:1.5;
+    }
+
+    .dress-content .dress-img:nth-child(2),
+    .dress-content .dress-img:nth-child(4){
+        transform:translateX(0);
+        margin-left:auto;
+        margin-right:auto;
     }
 
     .dress-img{
-        width:100%;
-        max-width:320px;
-        margin:auto;
+        max-width:180px;
     }
 
     .theme-colors{
-        margin-top:60px;
+        margin-top:35px;
     }
 
     .theme-colors h3{
-        font-size:40px;
+        font-size:20px;
+        margin-bottom:15px;
     }
 
     .theme-colors img{
-        max-width:700px;
+        max-width:280px;
+    }
+
+}
+
+
+/* ===============================
+   REMINDERS
+================================= */
+
+.reminders{
+    padding:70px 20px;
+    background:transparent;
+}
+
+.reminders-container{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+/* ===============================
+   TITLE
+================================= */
+
+.reminders h2{
+    font-family:'Great Vibes',cursive;
+    font-size:42px;
+    font-weight:400;
+    color:#9B6C68;
+}
+
+.reminders .line{
+    width:50px;
+    height:2px;
+    background:#D6B7A8;
+    margin:12px auto 16px;
+}
+
+.reminders-subtitle{
+    max-width:600px;
+    margin:0 auto 28px;
+    font-size:14px;
+    line-height:1.5;
+    color:#735957;
+}
+
+/* ===============================
+   GRID
+================================= */
+
+.reminders-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+/* ===============================
+   CARD
+================================= */
+
+.reminder-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(8px);
+    border-radius:12px;
+    padding:15px;
+
+    box-shadow:0 6px 16px rgba(0,0,0,.08);
+
+    transition:.3s ease;
+}
+
+.reminder-card:hover{
+    transform:translateY(-4px);
+}
+
+/* ===============================
+   ICON
+================================= */
+
+.reminder-card i{
+    font-size:20px;
+    color:#9B6C68;
+    margin-bottom:8px;
+}
+
+/* ===============================
+   TEXT
+================================= */
+
+.reminder-card h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:18px;
+    color:#8B5E5A;
+    margin-bottom:7px;
+    font-weight:600;
+}
+
+.reminder-card p{
+    font-size:13px;
+    line-height:1.5;
+    color:#735957;
+}
+
+.reminder-card strong{
+    color:#5E4946;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:1024px){
+
+    .reminders{
+        padding:45px 20px;
+    }
+
+    .reminders-container{
+        max-width:650px;
+    }
+
+    .reminders h2{
+        font-size:32px;
+    }
+
+    .reminders-subtitle{
+        font-size:14px;
+        margin-bottom:30px;
+    }
+
+    .reminders-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .reminder-card{
+        padding:18px;
+    }
+
+    .reminder-card i{
+        font-size:22px;
+    }
+
+    .reminder-card h3{
+        font-size:18px;
+    }
+
+    .reminder-card p{
+        font-size:13px;
+    }
+}
+
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .reminders{
+        padding:45px 15px;
+    }
+
+    .reminders h2{
+        font-size:30px;
+        margin-bottom:8px;
+    }
+
+    .reminders .line{
+        width:45px;
+    }
+
+    .reminders-subtitle{
+        font-size:12px;
+        line-height:1.4;
+        margin-bottom:20px;
+    }
+
+    .reminders-grid{
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+
+    .reminder-card{
+        padding:14px;
+    }
+
+    .reminder-card i{
+        font-size:18px;
+        margin-bottom:7px;
+    }
+
+    .reminder-card h3{
+        font-size:15px;
+        margin-bottom:5px;
+    }
+
+    .reminder-card p{
+        font-size:11px;
+        line-height:1.5;
     }
 
 }
 
 /* ===============================
-   MOBILE
+   ENTOURAGE
+================================= */
+
+.entourage{
+    padding:45px 20px;
+    text-align:center;
+    background:transparent;
+}
+
+.entourage-container{
+    max-width:700px;
+    margin:auto;
+}
+
+.entourage h2{
+    font-family:'Great Vibes',cursive;
+    font-size:32px;
+    font-weight:400;
+    color:#9B6C68;
+    margin-bottom:5px;
+}
+
+.entourage-list{
+    margin-top:15px;
+}
+
+/* ===============================
+   TEXT
+================================= */
+
+.entourage-list h3,
+.entourage-col h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:12px;
+    color:#8B5E5A;
+    text-transform:uppercase;
+    letter-spacing:.4px;
+    margin-top:14px;
+    margin-bottom:4px;
+    font-weight:600;
+}
+
+.entourage-list p,
+.entourage-col p{
+    font-family:'Cormorant Garamond',serif;
+    font-size:10px;
+    color:#000;
+    line-height:1.3;
+    margin:1px 0;
+}
+
+/* ===============================
+   TWO COLUMNS
+================================= */
+
+.entourage-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin:12px 0;
+    align-items:start;
+}
+
+.entourage-col{
+    text-align:center;
+}
+
+
+/* ===============================
+   TABLET
+================================= */
+
+@media (max-width:1024px){
+
+    .entourage{
+        padding:40px 15px;
+    }
+
+    .entourage-container{
+        max-width:600px;
+    }
+
+    .entourage h2{
+        font-size:30px !important;
+    }
+
+    .entourage-row{
+        gap:12px;
+        margin:10px 0;
+    }
+
+    .entourage-list h3,
+    .entourage-col h3{
+        font-size:11px !important;
+    }
+
+    .entourage-list p,
+    .entourage-col p{
+        font-size:9px !important;
+        line-height:1.25;
+    }
+
+}
+
+
+/* ===============================
+   MOBILE — UNCHANGED
 ================================= */
 
 @media (max-width:768px){
 
-    .dress-code{
-        padding:70px 20px;
+    .entourage{
+        padding:40px 12px;
     }
 
-    .dress-title{
-        flex-direction:column;
-        gap:12px;
-        margin-bottom:40px;
-    }
-
-    .dress-flower{
-        width:75px;
-    }
-
-    .dress-title h2{
-        font-size:42px;
-        letter-spacing:1px;
-    }
-
-    .dress-layout{
-        width:260px;
-        margin-top:8px;
-    }
-
-    .dress-content{
-        grid-template-columns:1fr;
-        gap:40px;
-    }
-
-    .dress-text{
-        text-align:center;
-    }
-
-    .dress-text h3{
+    .entourage h2{
         font-size:28px;
-        margin-bottom:12px;
     }
 
-    .dress-text ul{
-        list-style-position:inside;
-        padding:0;
-        text-align:center;
+    .entourage-row{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+        margin:12px 0;
     }
 
-    .dress-text li{
-        font-size:18px;
-        line-height:1.7;
+    .entourage-col h3,
+    .entourage-list h3{
+        font-size:10px !important;
+        margin-top:12px;
+        margin-bottom:4px;
     }
 
-    .dress-img{
-        width:100%;
-        max-width:240px;
-        margin:auto;
-    }
-
-    .theme-colors{
-        margin-top:50px;
-    }
-
-    .theme-colors h3{
-        font-size:30px;
-        margin-bottom:20px;
-    }
-
-    .theme-colors img{
-        width:100%;
-        max-width:320px;
+    .entourage-col p,
+    .entourage-list p{
+        font-size:9px !important;
+        line-height:1.3;
     }
 
 }
+
 /* ===============================
    RSVP
 ================================= */
 
 .rsvp{
-    padding:120px 20px;
+    padding:80px 20px;
     background:transparent;
 }
 
 .rsvp-container{
-    max-width:1400px;
+    max-width:1100px;
     margin:auto;
     display:grid;
-    grid-template-columns:1.4fr 1fr;
-    gap:70px;
+    grid-template-columns:1.2fr 1fr;
+    gap:50px;
     align-items:center;
 }
 
+/* ===============================
+   IMAGE
+================================= */
+
 .rsvp-image img{
     width:100%;
+    max-width:550px;
     display:block;
+    margin:auto;
     border-radius:10px;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    box-shadow:0 12px 28px rgba(0,0,0,.12);
 }
 
+/* ===============================
+   CONTENT
+================================= */
+
 .rsvp-content{
-    text-align:left;
+    text-align:center;
 }
 
 .rsvp-content h2{
     font-family:'Cormorant Garamond', serif;
-    font-size:72px;
+    font-size:48px;
     font-weight:400;
     color:#5e4946;
-    margin-bottom:25px;
+    margin-bottom:18px;
     text-align:center;
 }
 
 .rsvp-content p{
-    font-size:28px;
-    line-height:1.8;
+    font-size:17px;
+    line-height:1.6;
     color:#735957;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
+/* ===============================
+   CONTACT
+================================= */
+
 .rsvp-contact{
-    margin:35px 0;
+    margin:25px 0;
 }
 
 .rsvp-contact p{
     display:flex;
     align-items:center;
-    gap:15px;
-    font-size:24px;
+    justify-content:center;
+    gap:10px;
+    font-size:16px;
 }
 
 .rsvp-contact i{
-    width:25px;
+    width:20px;
     color:#5e4946;
 }
 
-/* RSVP Note */
+/* ===============================
+   RSVP NOTE
+================================= */
 
 .rsvp-note{
-    margin-top:10px;
-    margin-bottom:25px;
-    font-size:13px;      /* Smaller */
-    line-height:1.5;
+    margin:8px auto 20px;
+    font-size:11px;
+    line-height:1.4;
     color:#8B5E5A;
     font-style:italic;
     text-align:center;
-    max-width:380px;
-    margin-left:auto;
-    margin-right:auto;
+    max-width:330px;
 }
 
-/* Button */
+/* ===============================
+   BUTTON
+================================= */
 
 .rsvp-button{
     display:flex;
     justify-content:center;
-    margin-top:35px;
+    margin-top:25px;
 }
 
 .rsvp-btn{
     display:inline-block;
-    padding:15px 55px;
+    padding:11px 35px;
     background:#4a3d2b;
     color:#fff;
     text-decoration:none;
-    font-size:22px;
+    font-size:15px;
     border-radius:4px;
     transition:.3s;
 }
@@ -1111,17 +1488,18 @@ body{
 @media (max-width:768px){
 
     .rsvp{
-        padding:70px 20px;
+        padding:50px 15px;
     }
 
     .rsvp-container{
         grid-template-columns:1fr;
-        gap:40px;
+        gap:30px;
         text-align:center;
     }
 
     .rsvp-image img{
-        max-width:360px;
+        width:100%;
+        max-width:350px;
         margin:auto;
     }
 
@@ -1130,40 +1508,50 @@ body{
     }
 
     .rsvp-content h2{
-        font-size:50px;
+        font-size:32px;
+        margin-bottom:15px;
     }
 
     .rsvp-content p{
-        font-size:20px;
-        line-height:1.6;
+        font-size:14px;
+        line-height:1.5;
+        margin-bottom:12px;
     }
 
     .rsvp-contact{
-        margin:25px 0;
+        margin:20px 0;
     }
 
     .rsvp-contact p{
         justify-content:center;
-        gap:10px;
-        font-size:18px;
+        gap:8px;
+        font-size:13px;
+        line-height:1.4;
         flex-wrap:wrap;
     }
 
+    .rsvp-contact i{
+        width:18px;
+    }
+
     .rsvp-note{
-        font-size:12px;   /* Small on mobile */
-        line-height:1.5;
-        padding:0 15px;
+        font-size:11px;
+        line-height:1.4;
+        padding:0 10px;
+        margin-top:8px;
+        margin-bottom:18px;
     }
 
     .rsvp-button{
-        margin-top:25px;
+        margin-top:20px;
     }
 
     .rsvp-btn{
-        width:220px;
-        padding:14px 0;
-        font-size:20px;
+        width:90px;
+        padding:7px 0;
+        font-size:12px;
     }
+
 }
 
 /* ===============================
@@ -1171,66 +1559,77 @@ body{
 ================================= */
 
 .scrapbook{
-    padding:120px 20px;
+    padding:80px 20px;
     background:transparent;
 }
 
 .scrapbook-container{
-    max-width:1400px;
+    max-width:1100px;
     margin:auto;
     text-align:center;
 }
 
+/* ===============================
+   TITLE
+================================= */
+
 .scrapbook h2{
     font-family:'Great Vibes',cursive;
-    font-size:72px;
+    font-size:48px;
     color:#9B6C68;
     font-weight:400;
+    margin-bottom:5px;
 }
 
 .scrapbook-subtitle{
-    margin:20px auto 70px;
-    max-width:700px;
-    font-size:24px;
+    margin:12px auto 45px;
+    max-width:600px;
+    font-size:16px;
     color:#735957;
-    line-height:1.7;
+    line-height:1.6;
 }
 
-/* Gallery */
+/* ===============================
+   GALLERY
+================================= */
 
 .scrapbook-gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:45px;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
     justify-items:center;
     align-items:start;
 }
 
-/* Polaroid */
+/* ===============================
+   POLAROID
+================================= */
 
 .polaroid{
     width:100%;
-    max-width:280px;
+    max-width:220px;
 
     background:#fff;
-    padding:14px 14px 35px;
+    padding:10px 10px 25px;
 
-    border-radius:6px;
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
+    border-radius:5px;
+    box-shadow:0 10px 22px rgba(0,0,0,.12);
 
     transition:.35s ease;
 }
 
 .polaroid:hover{
-    transform:translateY(-8px) scale(1.03);
+    transform:translateY(-5px) scale(1.02);
 }
 
-/* Images */
+/* ===============================
+   IMAGES
+================================= */
 
 .polaroid img{
     width:100%;
     height:auto;
-    max-height:420px;
+    max-height:330px;
 
     display:block;
 
@@ -1241,14 +1640,16 @@ body{
     cursor:pointer;
 }
 
-/* Rotations */
+/* ===============================
+   ROTATIONS
+================================= */
 
 .rotate-left{
-    transform:rotate(-5deg);
+    transform:rotate(-4deg);
 }
 
 .rotate-right{
-    transform:rotate(5deg);
+    transform:rotate(4deg);
 }
 
 .rotate-small-left{
@@ -1259,10 +1660,14 @@ body{
     transform:rotate(2deg);
 }
 
+/* ===============================
+   ENDING
+================================= */
+
 .scrapbook-ending{
-    margin-top:80px;
+    margin-top:55px;
     font-family:'Great Vibes',cursive;
-    font-size:42px;
+    font-size:32px;
     color:#9B6C68;
 }
 
@@ -1885,343 +2290,5 @@ body{
     .divider-line{
         width:80px;
     }
-
-}
-
-/* ==========================================
-   RESPONSIVE FIXES
-   (KEEP DESKTOP UNCHANGED)
-========================================== */
-
-/*************** TABLET ****************/
-
-@media (max-width:1024px){
-
-section{
-    padding-left:30px !important;
-    padding-right:30px !important;
-}
-
-/* Story */
-
-.story-content{
-    grid-template-columns:1fr;
-    gap:45px;
-    text-align:center;
-}
-
-.story-title{
-    font-size:58px;
-}
-
-.left,
-.right{
-    margin-top:0;
-}
-
-.left p{
-    text-align:center;
-    font-size:20px;
-}
-
-.middle img{
-    max-width:420px;
-}
-
-.right img{
-    max-width:260px;
-}
-
-/* Invitation */
-
-.invite-title h2{
-    font-size:70px;
-}
-
-.flowers{
-    width:160px;
-    right:-120px;
-}
-
-.invite-main{
-    font-size:34px;
-}
-
-.invite-sub{
-    font-size:24px;
-}
-
-/* Dress Code */
-
-.dress-content{
-    grid-template-columns:1fr;
-    gap:40px;
-}
-
-.dress-layout{
-    width:260px;
-}
-
-.dress-img{
-    max-width:320px;
-}
-
-.theme-colors img{
-    width:90%;
-}
-
-/* RSVP */
-
-.rsvp-container{
-    grid-template-columns:1fr;
-    gap:50px;
-    text-align:center;
-}
-
-.rsvp-image img{
-    max-width:500px;
-    margin:auto;
-}
-
-.rsvp-content{
-    text-align:center;
-}
-
-.rsvp-contact p{
-    justify-content:center;
-}
-
-/* Entourage */
-
-.entourage-row{
-    gap:40px;
-}
-
-.entourage-col p{
-    font-size:22px;
-}
-
-}
-
-/**************** MOBILE ****************/
-
-@media (max-width:768px){
-
-section{
-    padding-left:18px !important;
-    padding-right:18px !important;
-}
-
-/* General */
-
-h2{
-    line-height:1.1;
-}
-
-img{
-    max-width:100%;
-    height:auto;
-}
-
-/* Transition */
-
-.transition{
-    padding:55px 18px;
-}
-
-.transition h2{
-    font-size:46px;
-}
-
-.transition p{
-    font-size:18px;
-}
-
-/* Story */
-
-.story{
-    padding:60px 18px;
-}
-
-.story-title{
-    font-size:46px;
-}
-
-.left p{
-    font-size:17px;
-    line-height:1.8;
-}
-
-.middle img{
-    max-width:300px;
-}
-
-.right{
-    margin-top:10px;
-}
-
-.right img{
-    max-width:200px;
-}
-
-.right h3{
-    font-size:22px;
-}
-
-.right p{
-    font-size:17px;
-}
-
-/* Video */
-
-.video-container{
-    border-radius:12px;
-}
-
-.video-container video{
-    height:auto;
-    aspect-ratio:16/9;
-}
-
-#playButton{
-    width:55px;
-    height:55px;
-    font-size:22px;
-}
-
-/* Invitation */
-
-.invitation-details{
-    padding:70px 20px;
-}
-
-.invite-title h2{
-    font-size:48px;
-}
-
-.flowers{
-    display:none;
-}
-
-.invite-block h3{
-    font-size:22px;
-}
-
-.invite-main{
-    font-size:28px;
-}
-
-.invite-sub{
-    font-size:18px;
-}
-
-.invite-btn{
-    width:210px;
-}
-
-/* Dress */
-
-.dress-title h2{
-    font-size:34px;
-}
-
-.dress-layout{
-    width:200px;
-}
-
-.dress-text h3{
-    font-size:24px;
-}
-
-.dress-text li{
-    font-size:17px;
-}
-
-.dress-img{
-    max-width:220px;
-}
-
-.theme-colors h3{
-    font-size:26px;
-}
-
-.theme-colors img{
-    width:100%;
-}
-
-/* RSVP */
-
-.rsvp-content h2{
-    font-size:42px;
-}
-
-.rsvp-content p{
-    font-size:18px;
-}
-
-.rsvp-btn{
-    width:200px;
-}
-
-/* Scrapbook */
-
-.scrapbook h2{
-    font-size:42px;
-}
-
-.scrapbook-gallery{
-    gap:20px;
-}
-
-.polaroid{
-    max-width:260px;
-}
-
-.polaroid img{
-    max-height:320px;
-}
-
-/* Reminder */
-
-.reminders h2{
-    font-size:42px;
-}
-
-.reminder-card{
-    padding:24px;
-}
-
-.reminder-card h3{
-    font-size:22px;
-}
-
-.reminder-card p{
-    font-size:17px;
-}
-
-/* Entourage */
-
-.entourage h2{
-    font-size:42px;
-}
-
-.entourage-col h3{
-    font-size:20px;
-}
-
-.entourage-col p{
-    font-size:17px;
-    line-height:1.6;
-}
-
-/* Divider */
-
-.love-divider p{
-    font-size:28px;
-}
-
-.footer p{
-    font-size:15px;
-}
 
 }
