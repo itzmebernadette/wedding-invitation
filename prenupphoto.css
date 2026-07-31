@@ -1589,6 +1589,132 @@ video:-webkit-full-screen{
 }
 
 /* ===============================
+   COUPLE'S PLAYLIST
+================================= */
+
+.playlist-section{
+    padding:80px 20px;
+    background:transparent;
+}
+
+.playlist-container{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+/* ===============================
+   TITLE
+================================= */
+
+.playlist-container h2{
+    font-family:'Cormorant Garamond', serif !important;
+    font-size:48px !important;
+    font-weight:400 !important;
+    letter-spacing:-3px !important;
+    color:#5E4946;
+    margin:0;
+    line-height:1;
+}
+
+/* Small line */
+
+.playlist-line{
+    width:65px;
+    height:2px;
+    background:#C9A59B;
+    margin:15px auto 18px;
+}
+
+/* Subtitle */
+
+.playlist-subtitle{
+    font-family:'Cormorant Garamond', serif;
+    font-size:18px;
+    color:#735957;
+    margin-bottom:35px;
+}
+
+/* ===============================
+   SPOTIFY
+================================= */
+
+.spotify-wrapper{
+    width:100%;
+    max-width:850px;
+    margin:auto;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.spotify-wrapper iframe{
+    display:block;
+    width:100%;
+    border:0;
+}
+
+
+/* ===============================
+   SPOTIFY MOBILE & TABLET FIX
+   ADDITIONAL CSS ONLY
+================================= */
+
+.spotify-wrapper{
+    background:#fff;
+}
+
+.spotify-wrapper iframe{
+    height:352px;
+    min-height:352px;
+}
+
+
+/* ===============================
+   TABLET
+================================= */
+
+@media (max-width:1024px){
+
+    .spotify-wrapper{
+        width:100%;
+        max-width:750px;
+    }
+
+    .spotify-wrapper iframe{
+        display:block;
+        width:100%;
+        height:352px;
+        min-height:352px;
+        border:0;
+    }
+
+}
+
+
+/* ===============================
+   MOBILE
+================================= */
+
+@media (max-width:768px){
+
+    .spotify-wrapper{
+        width:100%;
+        max-width:100%;
+        border-radius:12px;
+    }
+
+    .spotify-wrapper iframe{
+        display:block;
+        width:100%;
+        height:352px;
+        min-height:352px;
+        border:0;
+    }
+
+}
+
+/* ===============================
    SCRAPBOOK
 ================================= */
 
